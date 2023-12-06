@@ -17,6 +17,7 @@ let scrollable = document.querySelector(".scrollable");
 let current = 0;
 let target = 0;
 let ease = 0.075;
+let isScrolling=false;
 var elem = document.querySelectorAll(".imgg");
 // for (var i = 0; i < elem.length; i++) {
 //   (function () {
@@ -40,7 +41,13 @@ var elem = document.querySelectorAll(".imgg");
 
 // document.querySelector(".bottom").addEventListener("click", (event) => {
 //   event.preventDefault();
-//   //
+
+//   // wait
+//   // isscrolling
+
+//   // console.log("scrollig",isScrolling);
+  
+//   setTimeout(()=>{isScrolling=false},2000)
 //   var decal_y1 =
 //     document.querySelector("#img1").getBoundingClientRect().top +
 //     window.scrollY;
@@ -54,35 +61,64 @@ var elem = document.querySelectorAll(".imgg");
 //     document.querySelector("#img4").getBoundingClientRect().top +
 //     window.scrollY;
 
+//     // console.log("rr",decal_y1,decal_y2,decal_y3,decal_y4);
+//     // console.log("rr",window.scrollY);
+    
+//     // console.log("rr",target);
+
+//     var tt1=window.scrollY
+//     var tt2=window.scrollY
+
+//     // if (tt1!=tt2){
+//     //   isScrolling=true;
+//     // }
+
+//     // console.log("scrollig",isScrolling,tt1,tt2);
+
 //   if (
-//     window.scrollY < document.querySelector("#img1").getBoundingClientRect().top
+//     window.scrollY < decal_y1
 //   ) {
-//     window.scrollTo(0, decal_y1);
+//     window.scrollTo(0, !isScrolling?decal_y1:decal_y2);
+//     // current=decal_y1;
+//     // alert(target)
+//     // console.log(1)
 //   }
 
 //   else if (
 //     window.scrollY >
-//       document.querySelector("#img1").getBoundingClientRect().top &&
-//     window.scrollY < document.querySelector("#img2").getBoundingClientRect().top
+//     decal_y1 &&
+//     window.scrollY < decal_y2
 //   ) {
-//     window.scrollTo(0, decal_y2);
+//     window.scrollTo(0, !isScrolling?decal_y2:decal_y3);
+//     // current=decal_y2;
+//     console.log(2)
 //   }
 
-//   else if (
-//     window.scrollY >
-//       document.querySelector("#img2").getBoundingClientRect().top &&
-//     window.scrollY < document.querySelector("#img3").getBoundingClientRect().top
-//   ) {
-//     window.scrollTo(0, decal_y3);
-//   }
+  
 
 //  else if (
 //     window.scrollY >
-//       document.querySelector("#img3").getBoundingClientRect().top &&
-//     window.scrollY < document.querySelector("#img4").getBoundingClientRect().top
+//       decal_y2 &&
+//     window.scrollY < decal_y3
 //   ) {
-//     window.scrollTo(0, decal_y4);
+//     window.scrollTo(0, !isScrolling?decal_y3:decal_y4);
+//     // current=decal_y3;
+//     console.log(3)
 //   }
+
+//   else
+//    if (
+//     window.scrollY >
+//       decal_y3 &&
+//     window.scrollY < decal_y4
+//   )
+//    {
+//     window.scrollTo(0, decal_y4);
+//     console.log(4)
+//     // current=decal_y4
+//   }
+
+//   isScrolling=true;
 
 //   // img1
 //   // let id_text="#context" + event.target.id.slice(-1);
@@ -307,4 +343,4 @@ class MeshItem {
 }
 
 init();
-new EffectCanvas();
+var hh=new EffectCanvas();

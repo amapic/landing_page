@@ -34,7 +34,7 @@ describe("link", function () {
     [as[1].href, "https://www.linkedin.com/in/amaurypichat/"],
     [as[2].href, "http://localhost/images/cv_AmauryPICHAT.pdf"],
     [as[3].href, "http://localhost/agap2/index.html"],
-    [as[4].href, "http://localhost/agap2/index.html"],
+    [as[4].href, "https://amaurypichat.fr/agap2/index.html"],
     [as[5].href, "http://localhost/slide/index.html"],
     [as[6].href, "http://localhost/slide/index.html"],
     [as[7].href, "http://localhost/siteWeb1/index.html"],

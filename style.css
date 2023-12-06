@@ -136,6 +136,10 @@ h1.titre a {
       left: 0vh; */
 }
 
+/* .link:hover{
+  background-color: rgb(180,180,180);
+} */
+
 
 @media (min-width: 900px) {
 
@@ -811,7 +815,7 @@ h1.titre a {
   /* visual styling */
   width:100%;
   aspect-ratio:1;
-  background:#666;
+  background:rgb(128,128,128);
   border-radius:10px;
 }
 
@@ -824,7 +828,7 @@ h1.titre a {
   /* visual styling */
   width:100%;
   aspect-ratio:1;
-  background:#666;
+  background:rgb(128,128,128);
   border-radius:10px;
 }
 #nav_button .bottom:before {
@@ -843,5 +847,13 @@ h1.titre a {
   transform:translateY(20%) rotate(-45deg);
   border-top:5px solid #000;
   border-right:5px solid #000;
+}
+
+#nav_button .bottom:hover{
+  background:rgb(180,180,180);
+}
+
+#nav_button .top:hover{
+  background:rgb(180,180,180);
 }
 

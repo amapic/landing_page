@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "jest",
+    "test": "jest --detectOpenHandles",
     "start": "parcel index.html --open",
     "build": "parcel build index.html"
   },
@@ -28,6 +28,7 @@
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "purify-css": "^1.2.5",
-    "ssh2-sftp-client": "^9.1.0"
+    "ssh2-sftp-client": "^9.1.0",
+    "puppeteer":"last"
   }
 }
